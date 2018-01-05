@@ -1,0 +1,25 @@
+<div class="input-group">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" (click)="changeValue(+5)">
+      <i class="mdi mdi-plus"></i>
+    </button>
+  </span>
+
+  <!-- txtProgress reference to viwechild -->
+  <input type="number" 
+         #txtProgress
+         class="form-control" 
+         placeholder="Product name" 
+         name="progreso" 
+         [(ngModel)]="progreso" 
+         min=1 
+         max=100
+         (ngModelChange)="onChanges( $event )">
+
+
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" (click)="changeValue(-5)">
+      <i class="mdi mdi-minus"></i>
+    </button>
+  </span>
+</div>
