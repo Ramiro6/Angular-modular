@@ -13,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficodonaComponent } from '../components/graficodona/graficodona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     imports: [
@@ -32,7 +33,8 @@ import { GraficodonaComponent } from '../components/graficodona/graficodona.comp
         Graficas1Component,
         PagesComponent,
         IncrementadorComponent,
-        GraficodonaComponent
+        GraficodonaComponent,
+        AccountSettingsComponent
     ],
     providers: [],
 })
