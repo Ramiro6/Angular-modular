@@ -8,7 +8,9 @@ export class SidebarService {
     submenu: [
       { titulo: 'dashboard', url: '/dashboard' },
       { titulo: 'ProgressBar', url: '/progress' },
-      { titulo: 'dashboard', url: '/graficas1' }
+      { titulo: 'dashboard', url: '/graficas1' },
+      { titulo: 'Promesas', url: '/promesas' },
+      { titulo: 'Rxjs', url: '/rxjs' }
     ]
   }];
   constructor() { }
