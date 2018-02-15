@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 // Plugins
 import { ChartsModule } from 'ng2-charts';
@@ -16,13 +17,17 @@ import { GraficodonaComponent } from '../components/graficodona/graficodona.comp
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
     imports: [
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        PipesModule,
+        CommonModule
     ],
     exports: [
         DashboardComponent,
@@ -38,7 +43,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         GraficodonaComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent
     ],
     providers: [],
 })

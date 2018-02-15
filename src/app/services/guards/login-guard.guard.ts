@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 export class LoginGuardGuard implements CanActivate {
 
   constructor( public _userApi: UsuarioService,
-                public router: Router ) {
-                  this.router.navigate(['/login']);
+               public router: Router ) {
+                  // this.router.navigate(['/login']);
   }
 
   canActivate() {
